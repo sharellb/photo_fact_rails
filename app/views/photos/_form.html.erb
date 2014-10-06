@@ -4,9 +4,10 @@
     <%= f.label :title %><br>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
-
   <div class="form-group">
-  <%= f.file_field :image, class: 'form-control' %><br/>
+  	<%= f.label :link %>
+    <%= f.text_field :image, class: 'form-control', required: true %>
+    <span class="help-block">A link to your image.</span>
   </div>
     <%= f.submit class: 'btn btn-default' %>
 <% end %>
