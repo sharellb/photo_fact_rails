@@ -1,1 +1,3 @@
-json.extract! @category, :id, :name, :created_at, :updated_at
+json.array!(@category.facts) do |fact|
+  json.extract! fact, :id, :info
+end

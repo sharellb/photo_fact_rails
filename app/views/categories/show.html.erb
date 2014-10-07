@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 <h1><%= @category.name %> facts</h1>
+<% @category.facts.each do |fact| %>
+	<%= fact.info %>
+<% end %>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 
